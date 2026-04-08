@@ -24,8 +24,8 @@ app.use((req, res, next) => {
 });
 
 // ── API রাউট ──────────────────────────────────────────────────────────────────
-app.use('/api/stations', require('./routes/station'));
-app.use('/api/update', require('./routes/update'));
+app.use('/api/stations', require('./routes/stations'));
+app.use('/api/updates', require('./routes/updates'));
 
 // ── হেলথ চেক ─────────────────────────────────────────────────────────────────
 app.get('/api/health', (req, res) => {
